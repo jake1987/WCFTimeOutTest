@@ -1,0 +1,4 @@
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Common\bin\Debug\AskeyB2BService.Common.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Common\bin\Debug\AskeyB2BService.Common.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Common\obj\Debug\AskeyB2BService.Common.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Common\obj\Debug\AskeyB2BService.Common.pdb

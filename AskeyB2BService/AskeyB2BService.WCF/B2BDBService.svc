@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="AskeyB2BService.WCF.B2BDBService" CodeBehind="B2BDBService.svc.cs" %>

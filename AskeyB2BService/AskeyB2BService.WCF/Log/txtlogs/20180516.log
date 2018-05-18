@@ -1,0 +1,23 @@
+Log Entry : 2018年05月16日 16:42:22
+消息类型：OracleException
+消息内容：ORA-00904: "NAME1": 無效的 ID
+引发异常的方法：Int32 VerifyExecution(Int32 ByRef, Boolean, OracleInternal.Common.SqlStatementType, Int32, Oracle.ManagedDataAccess.Client.OracleException ByRef, Boolean ByRef, Boolean)
+引发异常源：Oracle Data Provider for .NET, Managed Driver   於 OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   於 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   於 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   於 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   於 AskeyB2BService.DBUtility.OracleHelper.ExecuteNonQuery(String connectionString, String cmdText) 於 e:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\OracleHelper.cs: 行 342
+------------------------------------
+Log Entry : 2018年05月16日 16:43:46
+INSERT INTO TB_TEST (ID,NAME1) VALUES (1,'a')
+------------------------------------
+Log Entry : 2018年05月16日 16:43:48
+消息类型：OracleException
+消息内容：ORA-00904: "NAME1": 無效的 ID
+引发异常的方法：Int32 VerifyExecution(Int32 ByRef, Boolean, OracleInternal.Common.SqlStatementType, Int32, Oracle.ManagedDataAccess.Client.OracleException ByRef, Boolean ByRef, Boolean)
+引发异常源：Oracle Data Provider for .NET, Managed Driver   於 OracleInternal.ServiceObjects.OracleConnectionImpl.VerifyExecution(Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, SqlStatementType sqlStatementType, Int32 arrayBindCount, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   於 OracleInternal.ServiceObjects.OracleCommandImpl.VerifyExecution(OracleConnectionImpl connectionImpl, Int32& cursorId, Boolean bThrowArrayBindRelatedErrors, OracleException& exceptionForArrayBindDML, Boolean& hasMoreRowsInDB, Boolean bFirstIterationDone)
+   於 OracleInternal.ServiceObjects.OracleCommandImpl.ExecuteNonQuery(String commandText, OracleParameterCollection paramColl, CommandType commandType, OracleConnectionImpl connectionImpl, Int32 longFetchSize, Int64 clientInitialLOBFS, OracleDependencyImpl orclDependencyImpl, Int64[]& scnFromExecution, OracleParameterCollection& bindByPositionParamColl, Boolean& bBindParamPresent, OracleException& exceptionForArrayBindDML, OracleConnection connection, OracleLogicalTransaction& oracleLogicalTransaction, Boolean isFromEF)
+   於 Oracle.ManagedDataAccess.Client.OracleCommand.ExecuteNonQuery()
+   於 AskeyB2BService.DBUtility.OracleHelper.ExecuteNonQuery(String connectionString, String cmdText) 於 e:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\OracleHelper.cs: 行 342
+------------------------------------

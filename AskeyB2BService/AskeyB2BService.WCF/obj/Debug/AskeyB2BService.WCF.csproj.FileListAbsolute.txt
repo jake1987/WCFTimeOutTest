@@ -1,0 +1,11 @@
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\bin\AskeyB2BService.WCF.dll.config
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\bin\AskeyB2BService.WCF.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\bin\AskeyB2BService.WCF.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\obj\Debug\AskeyB2BService.WCF.csprojResolveAssemblyReference.cache
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\obj\Debug\AskeyB2BService.WCF.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\obj\Debug\AskeyB2BService.WCF.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\bin\AskeyB2BService.DBUtility.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\bin\Oracle.ManagedDataAccess.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\bin\AskeyB2BService.DBUtility.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\bin\AskeyB2BService.Common.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WCF\bin\AskeyB2BService.Common.pdb

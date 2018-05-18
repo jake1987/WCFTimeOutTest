@@ -1,0 +1,6 @@
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WebTest\bin\AskeyB2BService.WebTest.dll.config
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WebTest\bin\AskeyB2BService.WebTest.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WebTest\bin\AskeyB2BService.WebTest.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WebTest\bin\Oracle.ManagedDataAccess.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WebTest\obj\Debug\AskeyB2BService.WebTest.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.WebTest\obj\Debug\AskeyB2BService.WebTest.pdb

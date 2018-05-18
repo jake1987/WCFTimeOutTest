@@ -1,0 +1,8 @@
+E:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\obj\Debug\AskeyB2BService.DBUtility.csprojResolveAssemblyReference.cache
+E:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\bin\Debug\AskeyB2BService.DBUtility.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\bin\Debug\AskeyB2BService.DBUtility.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\bin\Debug\Oracle.ManagedDataAccess.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\obj\Debug\AskeyB2BService.DBUtility.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\obj\Debug\AskeyB2BService.DBUtility.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\bin\Debug\AskeyB2BService.Common.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.DBUtility\bin\Debug\AskeyB2BService.Common.pdb

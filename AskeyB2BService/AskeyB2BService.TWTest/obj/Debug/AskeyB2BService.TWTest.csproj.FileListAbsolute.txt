@@ -1,0 +1,8 @@
+E:\Program\Local\AskeyB2BService\AskeyB2BService.TWTest\bin\Debug\AskeyB2BService.TWTest.exe.config
+E:\Program\Local\AskeyB2BService\AskeyB2BService.TWTest\bin\Debug\AskeyB2BService.TWTest.exe
+E:\Program\Local\AskeyB2BService\AskeyB2BService.TWTest\bin\Debug\AskeyB2BService.TWTest.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.TWTest\bin\Debug\AskeyB2BService.Common.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.TWTest\bin\Debug\AskeyB2BService.Common.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.TWTest\obj\Debug\AskeyB2BService.TWTest.exe
+E:\Program\Local\AskeyB2BService\AskeyB2BService.TWTest\obj\Debug\AskeyB2BService.TWTest.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.TWTest\obj\Debug\AskeyB2BService.TWTest.csprojResolveAssemblyReference.cache

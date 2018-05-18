@@ -1,0 +1,8 @@
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Test\bin\Debug\AskeyB2BService.Test.exe.config
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Test\bin\Debug\AskeyB2BService.Test.exe
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Test\bin\Debug\AskeyB2BService.Test.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Test\obj\Debug\AskeyB2BService.Test.csprojResolveAssemblyReference.cache
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Test\obj\Debug\AskeyB2BService.Test.exe
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Test\obj\Debug\AskeyB2BService.Test.pdb
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Test\bin\Debug\AskeyB2BService.Common.dll
+E:\Program\Local\AskeyB2BService\AskeyB2BService.Test\bin\Debug\AskeyB2BService.Common.pdb

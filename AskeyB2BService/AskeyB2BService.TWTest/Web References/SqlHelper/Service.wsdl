@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ExecuteSqlTran">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SQLStringList" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ExecuteSqlTranResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ExecuteSqlTranResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DMLRecord">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strConfig" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DMLRecordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DMLRecordResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoDT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strConfig" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInfoDTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInfoDTResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strConfig" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStrResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strSql" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strConfig" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetNumResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SqlCommandWithTransaction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AryStrSQL" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="strConfig" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SqlCommandWithTransactionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SqlCommandWithTransactionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSqlTranSoapIn">
+    <wsdl:part name="parameters" element="tns:ExecuteSqlTran" />
+  </wsdl:message>
+  <wsdl:message name="ExecuteSqlTranSoapOut">
+    <wsdl:part name="parameters" element="tns:ExecuteSqlTranResponse" />
+  </wsdl:message>
+  <wsdl:message name="DMLRecordSoapIn">
+    <wsdl:part name="parameters" element="tns:DMLRecord" />
+  </wsdl:message>
+  <wsdl:message name="DMLRecordSoapOut">
+    <wsdl:part name="parameters" element="tns:DMLRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoDTSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInfoDT" />
+  </wsdl:message>
+  <wsdl:message name="GetInfoDTSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInfoDTResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStrSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStr" />
+  </wsdl:message>
+  <wsdl:message name="GetStrSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStrResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNumSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNum" />
+  </wsdl:message>
+  <wsdl:message name="GetNumSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNumResponse" />
+  </wsdl:message>
+  <wsdl:message name="SqlCommandWithTransactionSoapIn">
+    <wsdl:part name="parameters" element="tns:SqlCommandWithTransaction" />
+  </wsdl:message>
+  <wsdl:message name="SqlCommandWithTransactionSoapOut">
+    <wsdl:part name="parameters" element="tns:SqlCommandWithTransactionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSqlTran">
+      <wsdl:input message="tns:ExecuteSqlTranSoapIn" />
+      <wsdl:output message="tns:ExecuteSqlTranSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DMLRecord">
+      <wsdl:input message="tns:DMLRecordSoapIn" />
+      <wsdl:output message="tns:DMLRecordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoDT">
+      <wsdl:input message="tns:GetInfoDTSoapIn" />
+      <wsdl:output message="tns:GetInfoDTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStr">
+      <wsdl:input message="tns:GetStrSoapIn" />
+      <wsdl:output message="tns:GetStrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNum">
+      <wsdl:input message="tns:GetNumSoapIn" />
+      <wsdl:output message="tns:GetNumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SqlCommandWithTransaction">
+      <wsdl:input message="tns:SqlCommandWithTransactionSoapIn" />
+      <wsdl:output message="tns:SqlCommandWithTransactionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSqlTran">
+      <soap:operation soapAction="http://tempuri.org/ExecuteSqlTran" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMLRecord">
+      <soap:operation soapAction="http://tempuri.org/DMLRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoDT">
+      <soap:operation soapAction="http://tempuri.org/GetInfoDT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStr">
+      <soap:operation soapAction="http://tempuri.org/GetStr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNum">
+      <soap:operation soapAction="http://tempuri.org/GetNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SqlCommandWithTransaction">
+      <soap:operation soapAction="http://tempuri.org/SqlCommandWithTransaction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ExecuteSqlTran">
+      <soap12:operation soapAction="http://tempuri.org/ExecuteSqlTran" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DMLRecord">
+      <soap12:operation soapAction="http://tempuri.org/DMLRecord" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInfoDT">
+      <soap12:operation soapAction="http://tempuri.org/GetInfoDT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStr">
+      <soap12:operation soapAction="http://tempuri.org/GetStr" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNum">
+      <soap12:operation soapAction="http://tempuri.org/GetNum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SqlCommandWithTransaction">
+      <soap12:operation soapAction="http://tempuri.org/SqlCommandWithTransaction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://10.1.1.103:1000/SqlHelper/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://10.1.1.103:1000/SqlHelper/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

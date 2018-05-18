@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d901b09d-3885-45a1-9cd2-5824a4755b5f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.7.46.42:9000/AskeyB2BService/B2BDBService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="B2BDBService.xsd" MetadataType="Schema" ID="e0c79c7e-13d7-4d22-a20e-4e05e620af28" SourceId="1" SourceUrl="http://10.7.46.42:9000/AskeyB2BService/B2BDBService.svc?xsd=xsd1" />
+    <MetadataFile FileName="B2BDBService.disco" MetadataType="Disco" ID="1f8456ad-f844-4d96-9c57-f833702b9535" SourceId="1" SourceUrl="http://10.7.46.42:9000/AskeyB2BService/B2BDBService.svc?disco" />
+    <MetadataFile FileName="B2BDBService1.xsd" MetadataType="Schema" ID="b033a015-f374-475b-8a30-0820e6988c1b" SourceId="1" SourceUrl="http://10.7.46.42:9000/AskeyB2BService/B2BDBService.svc?xsd=xsd0" />
+    <MetadataFile FileName="B2BDBService2.xsd" MetadataType="Schema" ID="27af7e30-0d83-4394-823e-0ea360432afa" SourceId="1" SourceUrl="http://10.7.46.42:9000/AskeyB2BService/B2BDBService.svc?xsd=xsd2" />
+    <MetadataFile FileName="B2BDBService.wsdl" MetadataType="Wsdl" ID="cf3de3c1-a30f-4cdd-bb18-8dd960c2ccfd" SourceId="1" SourceUrl="http://10.7.46.42:9000/AskeyB2BService/B2BDBService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="54d27e8d-b573-4bf5-b96b-286cd55807e8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="B2BDBService.xsd" MetadataType="Schema" ID="8bcba43b-a28d-42a0-afbd-74a3a59f6bb3" SourceId="1" SourceUrl="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc?xsd=xsd3" />
+    <MetadataFile FileName="B2BDBService1.xsd" MetadataType="Schema" ID="9caa70d3-19bc-4f57-93c6-650d87b816e3" SourceId="1" SourceUrl="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc?xsd=xsd4" />
+    <MetadataFile FileName="B2BDBService2.xsd" MetadataType="Schema" ID="0241cb9c-2739-4889-a67b-f2e9172e81da" SourceId="1" SourceUrl="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc?xsd=xsd5" />
+    <MetadataFile FileName="B2BDBService3.xsd" MetadataType="Schema" ID="5af2c634-f96d-4659-a6de-520e8bfcb21d" SourceId="1" SourceUrl="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc?xsd=xsd6" />
+    <MetadataFile FileName="B2BDBService.wsdl" MetadataType="Wsdl" ID="0885e86e-ee9b-4b02-a2a0-168b027c9419" SourceId="1" SourceUrl="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc?wsdl" />
+    <MetadataFile FileName="B2BDBService4.xsd" MetadataType="Schema" ID="606f6173-84f1-4476-a2ec-990486dd1d1e" SourceId="1" SourceUrl="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc?xsd=xsd0" />
+    <MetadataFile FileName="B2BDBService.disco" MetadataType="Disco" ID="921b69bd-7e01-4b3c-8f13-761e689d2569" SourceId="1" SourceUrl="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc?disco" />
+    <MetadataFile FileName="B2BDBService5.xsd" MetadataType="Schema" ID="509d5886-0a5c-419a-9997-cfab316ff902" SourceId="1" SourceUrl="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc?xsd=xsd1" />
+    <MetadataFile FileName="B2BDBService6.xsd" MetadataType="Schema" ID="3c6513c5-67eb-40ee-a87f-17645a45b4ef" SourceId="1" SourceUrl="http://10.1.1.103:1001/B2BTestDBService/B2BDBService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
